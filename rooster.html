@@ -1,0 +1,426 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Horeca Planner voor Beachline ontwikkeld door Incea Web-Solutions">
+    <meta name="author" content="Incea Web-Solutions">
+    <title>Beachline - Rooster</title>
+
+
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://getbootstrap.com/docs/5.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Custom styles for this template -->
+    <link href="styles.css" rel="stylesheet">
+    <!-- <link href="styles.css" rel="stylesheet"> -->
+
+
+</head>
+
+<body>
+
+    <header class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 pt-1 pb-1 shadow">
+        <a class="col-md-3 col-lg-2 me-0 px-3 fs-3" href="#">
+            <img src="img/Logo-white.png" alt="" srcset="" style="max-height: 5.5rem;">
+        </a>
+        <button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#sidebarNav" aria-controls="sidebarNav" aria-expanded="false"
+            aria-label="Toggle navigation"><i class="fa fa-bars"></i>
+        </button>
+        <div class="w-100 navbar-nav text-center">
+            <div class="nav-item text-nowrap">
+                <h1 class="text-white col-md-12">
+                    Welkom Gebruiker
+                </h1>
+                <p class="text-white col-md-12 fw-light" style="vertical-align: bottom;">Zaterdag, 25-06-2022</p>
+            </div>
+        </div>
+    </header>
+
+    <div class="container-fluid">
+        <div class="row">
+            <nav id="sidebarNav" class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse">
+                <div class="position-sticky pt-2 mt-5">
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="rooster.html">
+                                Rooster
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="planning.html">
+                                Planning
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="evenementen.html">
+                                Evenementen
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="beschikbaarheid.html">
+                                Beschikbaarheid
+                            </a>
+                        </li>
+                    <hr>
+                    <h6 class="sidebar-heading align-items-center px-3 mt-4 mb-1 fw-bolder fs-6">
+                        Persoonlijk
+                      </h6>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/">
+                                Uitloggen
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+            <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+                <div
+                    class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+                    <h1 class="h2">Rooster</h1>
+                    <div class="btn-toolbar mb-2 mb-md-0">
+                        <div class="btn-group me-2">
+                            <a type="button" class="btn btn-sm btn-info">1 dag</a>
+                            <a type="button" class="btn btn-sm btn-outline-secondary" href="rooster-3-dagen.html">3 dagen</a>
+                            <a type="button" class="btn btn-sm btn-outline-secondary" href="rooster-1-week.html">1 week</a>
+                            <a type="button" class="btn btn-sm btn-outline-secondary" href="rooster-1-maand.html">1 maand</a> 
+                        </div>
+                    </div>
+                    <div class="">
+                        <input type="date" class="form-control" id="date" />
+                    </div>
+                </div>
+
+                <div class="container-fluid row rounded-5 shadow p-3 mb-5 ">
+                    <section class="col-lg  rounded">
+                        <H3 class="text-center fs-2">Zaterdag</H3>
+                        <hr>
+                        <table class="table table-hover table-fit table-responsive shadow-sm p-3 mb-5  rounded">
+                            <tbody>
+                                <tr class="row">
+                                    <th class="col-1"><small>00:00</small></th>
+                                    <th class="col-11">
+    
+                                    </th>
+                                </tr>
+                                <tr class="row">
+                                    <th class="col-1"><small>00:30</small></th>
+                                    <th class="col-11">
+    
+                                    </th>
+                                </tr>
+                                <tr class="row">
+                                    <th class="col-1"><small>01:00</small></th>
+                                    <th class="col-11">
+    
+                                    </th>
+                                </tr>
+                                <tr class="row">
+                                    <th class="col-1"><small>01:30</small></th>
+                                    <th class="col-11">
+    
+                                    </th>
+                                </tr>
+                                <tr class="row">
+                                    <th class="col-1"><small>02:00</small></th>
+                                    <th class="col-11">
+    
+                                    </th>
+                                </tr>
+                                <tr class="row">
+                                    <th class="col-1"><small>02:30</small></th>
+                                    <th class="col-11">
+    
+                                    </th>
+                                </tr>
+                                <tr class="row">
+                                    <th class="col-1"><small>03:00</small></th>
+                                    <th class="col-11">
+    
+                                    </th>
+                                </tr>
+                                <tr class="row">
+                                    <th class="col-1"><small>03:30</small></th>
+                                    <th class="col-11">
+    
+                                    </th>
+                                </tr>
+                                <tr class="row">
+                                    <th class="col-1"><small>04:00</small></th>
+                                    <th class="col-11">
+    
+                                    </th>
+                                </tr>
+                                <tr class="row">
+                                    <th class="col-1"><small>04:30</small></th>
+                                    <th class="col-11">
+    
+                                    </th>
+                                </tr>
+                                <tr class="row">
+                                    <th class="col-1"><small>05:00</small></th>
+                                    <th class="col-11">
+    
+                                    </th>
+                                </tr>
+                                <tr class="row">
+                                    <th class="col-1"><small>05:30</small></th>
+                                    <th class="col-11">
+    
+                                    </th>
+                                </tr>
+                                <tr class="row">
+                                    <th class="col-1"><small>06:00</small></th>
+                                    <th class="col-11">
+    
+                                    </th>
+                                </tr>
+                                <tr class="row">
+                                    <th class="col-1"><small>06:30</small></th>
+                                    <th class="col-11">
+    
+                                    </th>
+                                </tr>
+                                <tr class="row">
+                                    <th class="col-1"><small>07:00</small></th>
+                                    <th class="col-11">
+    
+                                    </th>
+                                </tr>
+                                <tr class="row">
+                                    <th class="col-1"><small>07:30</small></th>
+                                    <th class="col-11">
+    
+                                    </th>
+                                </tr>
+                                <tr class="row">
+                                    <th class="col-1"><small>08:00</small></th>
+                                    <th class="col-11">
+    
+                                    </th>
+                                </tr>
+                                <tr class="row">
+                                    <th class="col-1"><small>08:30</small></th>
+                                    <th class="col-11">
+    
+                                    </th>
+                                </tr>
+                                <tr class="row">
+                                    <th class="col-1"><small>09:00</small></th>
+                                    <th class="col-11">
+    
+                                    </th>
+                                </tr>
+                                <tr class="row">
+                                    <th class="col-1"><small>09:30</small></th>
+                                    <th class="col-11">
+    
+                                    </th>
+                                </tr>
+                                <tr class="row">
+                                    <th class="col-1"><small>10:00</small></th>
+                                    <th class="col-11">
+    
+                                    </th>
+                                </tr>
+                                <tr class="row">
+                                    <th class="col-1"><small>10:30</small></th>
+                                    <th class="col-11">
+    
+                                    </th>
+                                </tr>
+                                <tr class="row">
+                                    <th class="col-1"><small>11:00</small></th>
+                                    <th class="col-11">
+    
+                                    </th>
+                                </tr>
+                                <tr class="row">
+                                    <th class="col-1"><small>11:30</small></th>
+                                    <th class="col-11">
+    
+                                    </th>
+                                </tr>
+                                <tr class="row">
+                                    <th class="col-1"><small>12:00</small></th>
+                                    <th class="col-11">
+    
+                                    </th>
+                                </tr>
+                                <tr class="row">
+                                    <th class="col-1"><small>12:30</small></th>
+                                    <th class="col-11">
+    
+                                    </th>
+                                </tr>
+                                <tr class="row">
+                                    <th class="col-1"><small>13:00</small></th>
+                                    <th class="col-11">
+    
+                                    </th>
+                                </tr>
+                                <tr class="row">
+                                    <th class="col-1"><small>13:30</small></th>
+                                    <th class="col-11">
+    
+                                    </th>
+                                </tr>
+                                <tr class="row">
+                                    <th class="col-1"><small>14:00</small></th>
+                                    <th class="col-11">
+    
+                                    </th>
+                                </tr>
+                                <tr class="row">
+                                    <th class="col-1"><small>14:30</small></th>
+                                    <th class="col-11">
+    
+                                    </th>
+                                </tr>
+                                <tr class="row">
+                                    <th class="col-1"><small>15:00</small></th>
+                                    <th class="col-11">
+    
+                                    </th>
+                                </tr>
+                                <tr class="row">
+                                    <th class="col-1"><small>15:30</small></th>
+                                    <th class="col-11">
+    
+                                    </th>
+                                </tr>
+                                <tr class="row">
+                                    <th class="col-1"><small>16:00</small></th>
+                                    <th class="col-11">
+    
+                                    </th>
+                                </tr>
+                                <tr class="row">
+                                    <th class="col-1"><small>16:30</small></th>
+                                    <th class="col-11">
+    
+                                    </th>
+                                </tr>
+                                <tr class="row">
+                                    <th class="col-1"><small>17:00</small></th>
+                                    <th class="col-11">
+    
+                                    </th>
+                                </tr>
+                                <tr class="row">
+                                    <th class="col-1"><small>17:30</small></th>
+                                    <th class="col-11">
+    
+                                    </th>
+                                </tr>
+                                <tr class="row">
+                                    <th class="col-1"><small>18:00</small></th>
+                                    <th class="col-11">
+    
+                                    </th>
+                                </tr>
+                                <tr class="row">
+                                    <th class="col-1"><small>18:30</small></th>
+                                    <th class="col-11">
+    
+                                    </th>
+                                </tr>
+                                <tr class="row">
+                                    <th class="col-1"><small>19:00</small></th>
+                                    <th class="col-11">
+    
+                                    </th>
+                                </tr>
+                                <tr class="row">
+                                    <th class="col-1"><small>19:30</small></th>
+                                    <th class="col-11">
+    
+                                    </th>
+                                </tr>
+                                <tr class="row">
+                                    <th class="col-1"><small>20:00</small></th>
+                                    <th class="col-11">
+    
+                                    </th>
+                                </tr>
+                                <tr class="row">
+                                    <th class="col-1"><small>20:30</small></th>
+                                    <th class="col-11">
+    
+                                    </th>
+                                </tr>
+                                <tr class="row">
+                                    <th class="col-1"><small>21:00</small></th>
+                                    <th class="col-11">
+    
+                                    </th>
+                                </tr>
+                                <tr class="row">
+                                    <th class="col-1"><small>21:30</small></th>
+                                    <th class="col-11">
+    
+                                    </th>
+                                </tr>
+                                <tr class="row">
+                                    <th class="col-1"><small>22:00</small></th>
+                                    <th class="col-11">
+    
+                                    </th>
+                                </tr>
+                                <tr class="row">
+                                    <th class="col-1"><small>22:30</small></th>
+                                    <th class="col-11">
+    
+                                    </th>
+                                </tr>
+                                <tr class="row">
+                                    <th class="col-1"><small>23:00</small></th>
+                                    <th class="col-11">
+    
+                                    </th>
+                                </tr>
+                                <tr class="row">
+                                    <th class="col-1"><small>23:30</small></th>
+                                    <th class="col-11">
+    
+                                    </th>
+                                </tr>
+                                <tr class="row">
+                                    <th class="col-1"><small>00:00</small></th>
+                                    <th class="col-11">
+    
+                                    </th>
+                                </tr>
+                                <tr class="row">
+                                    <th class="col-1"><small>00:30</small></th>
+                                    <th class="col-11">
+    
+                                    </th>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </section>
+                    
+                </div>
+            </main>
+        </div>
+    </div>
+
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
+    </script>
+
+
+</body>
+
+</html>

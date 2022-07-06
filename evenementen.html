@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Horeca Planner voor Beachline ontwikkeld door Incea Web-Solutions">
+    <meta name="author" content="Incea Web-Solutions">
+    <title>Beachline - Rooster</title>
+
+
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://getbootstrap.com/docs/5.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Custom styles for this template -->
+    <link href="styles.css" rel="stylesheet">
+    <!-- <link href="styles.css" rel="stylesheet"> -->
+
+
+</head>
+
+<body>
+
+    <header class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 pt-1 pb-1 shadow">
+        <a class="col-md-3 col-lg-2 me-0 px-3 fs-3" href="#">
+            <img src="img/Logo-white.png" alt="" srcset="" style="max-height: 5.5rem;">
+        </a>
+        <button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#sidebarNav" aria-controls="sidebarNav" aria-expanded="false"
+            aria-label="Toggle navigation"><i class="fa fa-bars"></i>
+        </button>
+        <div class="w-100 navbar-nav text-center">
+            <div class="nav-item text-nowrap">
+                <h1 class="text-white col-md-12">
+                    Welkom Gebruiker
+                </h1>
+                <p class="text-white col-md-12 fw-light" style="vertical-align: bottom;">Zaterdag, 25-06-2022</p>
+            </div>
+        </div>
+    </header>
+
+    <div class="container-fluid">
+        <div class="row">
+            <nav id="sidebarNav" class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse">
+                <div class="position-sticky pt-2 mt-5">
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link" href="rooster.html">
+                                Rooster
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="planning.html">
+                                Planning
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link  active" aria-current="page" href="evenementen.html">
+                                Evenementen
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="beschikbaarheid.html">
+                                Beschikbaarheid
+                            </a>
+                        </li>
+                        <hr>
+                        <h6 class="sidebar-heading align-items-center px-3 mt-4 mb-1 fw-bolder fs-6">
+                            Persoonlijk
+                        </h6>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/">
+                                Uitloggen
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+            <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+                <header
+                    class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+                    <h1 class="h2">Evenementen</h1>
+                </header>
+
+                <div class="container-fluid row rounded-5 shadow p-3 mb-5 ">
+                    <div class="row">
+                        <div class="col-12 row">
+                            <div class="input-group mb-3">
+                                <input type="text" class="form-control" placeholder="Klant naam"
+                                    aria-label="Klant naam">
+                            </div>
+
+                            <div class="input-group mb-3">
+                                <label for="email" class="form-label">Contact mail Klant</label>
+                                <input type="email" id="email" class="form-control" placeholder="voorbeeld@domein.nl">
+                                <label for="tel" class="form-label">Contact telefoonnummer Klant</label>
+                                <input type="tel" id="tel" class="form-control" placeholder="+31 6 23456789">
+                            </div>
+
+                            <label for="basic-url" class="form-label">Your vanity URL</label>
+                            <div class="input-group mb-3">
+                                <span class="input-group-text" id="basic-addon3">https://example.com/users/</span>
+                                <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+                            </div>
+
+                            <div class="input-group">
+                                <textarea class="form-control" aria-label="With textarea"></textarea>
+                            </div>
+                            <div class="input-group mb-3">
+                                <select class="form-select" aria-label="Default select example">
+                                    <option selected>Kies Activiteit</option>
+                                    <option value="Blokarten ">Blokarten </option>
+                                    <option value="Powerkiten">Powerkiten</option>
+                                    <option value="Kitebuggy">Kitebuggy</option>
+                                    <option value="Kitesurfen">Kitesurfen</option>
+                                    <option value="IJsbaden ">IJsbaden </option>
+                                    <option value="Raften ">Raften </option>
+                                    <option value="Suppen ">Suppen </option>
+                                    <option value="Kajakken">Kajakken</option>
+                                    <option value="Kitesurfen">Kitesurfen</option>
+                                    <option value="Golfsurfen">Golfsurfen</option>
+                                    <option value="E-choppers ">E-choppers </option>
+                                    <option value="Bubble soccer">Bubble soccer</option>
+                                    <option value="Expeditie Robinson">Expeditie Robinson</option>
+                                    <option value="Archery Tag">Archery Tag</option>
+                                    <option value="Boeren Beachgolf">Boeren Beachgolf</option>
+                                    <option value="Beachtennis">Beachtennis</option>
+                                    <option value="Zeskamp">Zeskamp</option>
+                                    <option value="Beachvolleybal">Beachvolleybal</option>
+                                    <option value="Beachsoccer">Beachsoccer</option>
+                                    <option value="Schatzoeken">Schatzoeken</option>
+                                    <option value="Cocktail workshop">Cocktail workshop</option>
+                                    <option value="BeachLine Pubquiz">BeachLine Pubquiz</option>
+                                    <option value="Boogschieten">Boogschieten</option>
+                                    <option value="Djembé">Djembé</option>
+                                    <option value="Schilderworkshop">Schilderworkshop</option>
+                                    <option value="Beachcamp kids">Beachcamp kids</option>
+                                    <option value="Kadobon">Kadobon</option>
+                                </select>
+
+
+                                <button class="ms-5 btn btn-outline-success shadow-ms"
+                                    style="width: 7rem;">Toevoegen</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </main>
+        </div>
+    </div>
+</body>
+
+</html>

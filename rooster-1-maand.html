@@ -1,0 +1,282 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Horeca Planner voor Beachline ontwikkeld door Incea Web-Solutions">
+    <meta name="author" content="Incea Web-Solutions">
+    <title>Beachline - Rooster</title>
+
+
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://getbootstrap.com/docs/5.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Custom styles for this template -->
+    <link href="styles.css" rel="stylesheet">
+    <!-- <link href="styles.css" rel="stylesheet"> -->
+
+
+</head>
+
+<body>
+
+    <header class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 pt-1 pb-1 shadow">
+        <a class="col-md-3 col-lg-2 me-0 px-3 fs-3" href="#">
+            <img src="img/Logo-white.png" alt="" srcset="" style="max-height: 5.5rem;">
+        </a>
+        <button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#sidebarNav" aria-controls="sidebarNav" aria-expanded="false"
+            aria-label="Toggle navigation"><i class="fa fa-bars"></i>
+        </button>
+        <div class="w-100 navbar-nav text-center">
+            <div class="nav-item text-nowrap">
+                <h1 class="text-white col-md-12">
+                    Welkom Gebruiker
+                </h1>
+                <p class="text-white col-md-12 fw-light" style="vertical-align: bottom;">Zaterdag, 25-06-2022</p>
+            </div>
+        </div>
+    </header>
+
+    <div class="container-fluid">
+        <div class="row">
+            <nav id="sidebarNav" class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse">
+                <div class="position-sticky pt-2 mt-5">
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="rooster.html">
+                                Rooster
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="planning.html">
+                                Planning
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="evenementen.html">
+                                Evenementen
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="beschikbaarheid.html">
+                                Beschikbaarheid
+                            </a>
+                        </li>
+                        <hr>
+                        <h6 class="sidebar-heading align-items-center px-3 mt-4 mb-1 fw-bolder fs-6">
+                            Persoonlijk
+                        </h6>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/">
+                                Uitloggen
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+            <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+                <header
+                    class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+                    <h1 class="h2">Rooster</h1>
+                    <div class="btn-toolbar mb-2 mb-md-0">
+                        <div class="btn-group me-2">
+                            <a type="button" class="btn btn-sm btn-outline-secondary" href="rooster.html">1 dag</a>
+                            <a type="button" class="btn btn-sm btn-outline-secondary" href="rooster-3-dagen.html">3
+                                dagen</a>
+                            <a type="button" class="btn btn-sm btn-outline-secondary" href="rooster-1-week.html">1
+                                week</a>
+                            <a type="button" class="btn btn-sm btn-info" href="rooster-1-maand.html">1 maand</a>
+                        </div>
+                    </div>
+                    <div class="">
+                        <input type="date" class="form-control" placeholder="25/06/2022" id="date" />
+                    </div>
+                </header>
+
+                <div class="container-fluid row rounded-5 shadow p-3 mb-5 ">
+                    <section class="col-lg  rounded">
+                        <H3 class="text-center fs-4">Zaterdag 25-06-2022 t/m Maandag 24-07-2022</H3>
+                        <hr>
+                        <div class="shadow-sm p-3 mb-5 rounded">
+                            <div class="row">
+                                <button class="col m-1 border" style="height:100px;" type="button"  data-bs-toggle="modal" data-bs-target="#model1">
+                                    <h5>Zaterdag 25-6-22</h5>
+                                    <ul class="text-start">    
+                                        <li>Evenement (2)</li>
+                                        <li>Bar (1)</li>
+                                        <li>overal en nergens (1)</li>
+                                    </ul>    
+                                </button>
+                                <div class="modal fade" id="model1" tabindex="-1" aria-labelledby="model1Label" aria-hidden="true">
+                                    <div class="modal-dialog-centered modal-dialog">
+                                      <div class="modal-content">
+                                        <div class="modal-header">
+                                          <h5 class="modal-title" id="model1Label">Zaterdag 25-6-22</h5>
+                                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <table class="table table-hover table-fit table-light">
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col"></th>
+                                                        <th scope="col">Evenementen</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <th class="col-1"><small>11:00</small></th>
+                                                        <td>12p-exp-Jansen</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th class="col-1"><small>15:30</small></th>
+                                                        <td>10p-blo-Van der valk</td>
+                                                    </tr>
+                                            </table>
+
+                                            <table class="table table-hover table-fit table-light">
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col"></th>
+                                                        <th scope="col">Bar</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <th class="col-1"><small>11:00 - 21:00</small></th>
+                                                        <td>Zoe</td>
+                                                    </tr>
+                                            </table>
+                                            
+                                            <table class="table table-hover table-fit table-light">
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col"></th>
+                                                        <th scope="col">Overal en nergens</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <th class="col-1"><small>10:00</small></th>
+                                                        <td>Jeffery</td>
+                                                    </tr>
+                                            </table>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                <button class="col m-1 border" style="height:100px;" type="button"  data-bs-toggle="modal" data-bs-target="#model2"><small>Zondag 26-6-22</small></button>
+                                <button class="col m-1 border" style="height:100px;" type="button"  data-bs-toggle="modal" data-bs-target="#model3"><small>Maandag 27-6-22</small></button>
+                                <button class="col m-1 border" style="height:100px;" type="button"  data-bs-toggle="modal" data-bs-target="#model4"><small>Dinsdag 28-6-22</small></button>
+                                <button class="col m-1 border" style="height:100px;" type="button"  data-bs-toggle="modal" data-bs-target="#model5"><small>Woensdag 29-6-22</small></button>
+                            </div>
+                            <div class="row">
+                                <button class="col m-1 border" style="height:100px;" type="button" ><small>Donderdag 30-6-22</small></button>
+                                <button class="col m-1 border" style="height:100px;" type="button" ><small>Vrijdag 01-7-22</small></button>
+                                <button class="col m-1 border" style="height:100px;" type="button" ><small>Zaterdag 02-7-22</small></button>
+                                <button class="col m-1 border" style="height:100px;" type="button" ><small>Zondag 03-7-22</small></button>
+                                <button class="col m-1 border" style="height:100px;" type="button" ><small>Maandag 04-7-22</small></button>
+                            </div>
+                            <div class="row">
+                                <button class="col m-1 border" style="height:100px;" type="button" ><small>Dinsdag 05-7-22</small></button>
+                                <button class="col m-1 border" style="height:100px;" type="button" ><small>Woensdag 06-7-22</small></button>
+                                <button class="col m-1 border" style="height:100px;" type="button" ><small>Donderdag 07-7-22</small></button>
+                                <button class="col m-1 border" style="height:100px;" type="button" ><small>Vrijdag 08-7-22</small></button>
+                                <button class="col m-1 border" style="height:100px;" type="button" ><small>Zaterdag 09-7-22</small></button>
+                            </div>
+                            <div class="row">
+                                <button class="col m-1 border" style="height:100px;" type="button" ><small>Zondag 10-7-22</small></button>
+                                <button class="col m-1 border" style="height:100px;" type="button" ><small>Maandag 11-7-22</small></button>
+                                <button class="col m-1 border" style="height:100px;" type="button" ><small>Dinsdag 12-7-22</small></button>
+                                <button class="col m-1 border" style="height:100px;" type="button" ><small>Woensdag 13-7-22</small></button>
+                                <button class="col m-1 border" style="height:100px;" type="button" ><small>Donderdag 14-7-22</small></button>
+                            </div>
+                            <div class="row">
+                                <button class="col m-1 border" style="height:100px;" type="button" ><small>Vrijdag 15-7-22</small></button>
+                                <button class="col m-1 border" style="height:100px;" type="button" ><small>Zaterdag 16-7-22</small></button>
+                                <button class="col m-1 border" style="height:100px;" type="button" ><small>Zondag 17-7-22</small></button>
+                                <button class="col m-1 border" style="height:100px;" type="button" ><small>Maandag 18-7-22</small></button>
+                                <button class="col m-1 border" style="height:100px;" type="button" ><small>Dinsdag 19-7-22</small></button>
+                            </div>
+                            <div class="row">
+                                <button class="col m-1 border" style="height:100px;" type="button" ><small>Woensdag 20-7-22</small></button>
+                                <button class="col m-1 border" style="height:100px;" type="button" ><small>Donderdag 21-7-22</small></button>
+                                <button class="col m-1 border" style="height:100px;" type="button" ><small>Vrijdag 22-7-22</small></button>
+                                <button class="col m-1 border" style="height:100px;" type="button" ><small>Zaterdag 23-7-22</small></button>
+                                <button class="col m-1 border" style="height:100px;" type="button" ><small>Zondag 24-7-22</small></button>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </main>
+        </div>
+    </div>
+    <!-- <div class="modal fade" id="1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="1Label" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="1Label">Zaterdag 25-6-22</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <table class="table table-hover table-fit table-light">
+
+              </table>
+            </div>
+          </div>
+        </div>
+      </div> -->
+
+
+      
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
+    </script>
+<script>
+    const myModal = document.getElementById('myModal')
+const myInput = document.getElementById('myInput')
+
+myModal.addEventListener('shown.bs.modal', () => {
+  myInput.focus()
+})
+</script>
+
+</body>
+
+</html>

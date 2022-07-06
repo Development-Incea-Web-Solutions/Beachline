@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Horeca Planner voor Beachline ontwikkeld door Incea Web-Solutions">
+    <meta name="author" content="Incea Web-Solutions">
+    <title>Beachline - Rooster</title>
+
+
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://getbootstrap.com/docs/5.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Custom styles for this template -->
+    <link href="styles.css" rel="stylesheet">
+    <!-- <link href="styles.css" rel="stylesheet"> -->
+
+
+</head>
+
+<body>
+
+    <header class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 pt-1 pb-1 shadow">
+        <a class="col-md-3 col-lg-2 me-0 px-3 fs-3" href="#">
+            <img src="img/Logo-white.png" alt="" srcset="" style="max-height: 5.5rem;">
+        </a>
+        <button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#sidebarNav" aria-controls="sidebarNav" aria-expanded="false"
+            aria-label="Toggle navigation"><i class="fa fa-bars"></i>
+        </button>
+        <div class="w-100 navbar-nav text-center">
+            <div class="nav-item text-nowrap">
+                <h1 class="text-white col-md-12">
+                    Welkom Gebruiker
+                </h1>
+                <p class="text-white col-md-12 fw-light" style="vertical-align: bottom;">Zaterdag, 25-06-2022</p>
+            </div>
+        </div>
+    </header>
+
+    <div class="container-fluid">
+        <div class="row">
+            <nav id="sidebarNav" class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse">
+                <div class="position-sticky pt-2 mt-5">
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link" href="rooster.html">
+                                Rooster
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="planning.html">
+                                Planning
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="evenementen.html">
+                                Evenementen
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="beschikbaarheid.html">
+                                Beschikbaarheid
+                            </a>
+                        </li>
+                        <hr>
+                        <h6 class="sidebar-heading align-items-center px-3 mt-4 mb-1 fw-bolder fs-6">
+                            Persoonlijk
+                        </h6>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/">
+                                Uitloggen
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+            <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+                <header
+                    class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+                    <h1 class="h2">Beschikbaarheid Opgeven</h1>
+                </header>
+
+                <div class="container-fluid row rounded-5 shadow p-3 mb-5 ">
+                    <div class="row">
+                        <div class="col-12 row">
+                            <div class="input-group mb-3">
+                                <span class="input-group-text">Dag</span>
+                                <input type="date" class="form-control">
+                                <span class="input-group-text">Start Tijd</span>
+                                <input type="time" class="form-control">
+                                <span class="input-group-text">Eind Tijd</span>
+                                <input type="time" class="form-control">
+                                <button class="ms-5 btn btn-outline-success shadow-ms"
+                                    style="width: 7rem;">Toevoegen</button>
+                            </div>
+                        </div>
+                        <div class="col-12 row">
+                            <div class="col mt-3">
+                                <h5 class="text-secondary">
+                                    Opgegeven Beschikbaarheid
+                                </h5>
+                            </div>
+                            <div class="input-group mb-3">
+                                <span class="input-group-text">Dag</span>
+                                <input type="text" disabled placeholder="27-06-2022" class="form-control">
+                                <span class="input-group-text">Start Tijd</span>
+                                <input type="text" disabled placeholder="10:00 AM" class="form-control">
+                                <span class="input-group-text">Eind Tijd</span>
+                                <input type="text" disabled placeholder="Sluit/tot nodig" class="form-control">
+                                <button class="ms-5 btn btn-outline-danger shadow-ms"
+                                    style="width: 7rem;">Verwijderen</button>
+                            </div>
+                        </div>
+                        <div class="col-12 row">
+                            <div class="col mt-3">
+                                <h5 class="text-secondary">
+                                    Geaccepteerde Beschikbaarheid
+                                </h5>
+                            </div>
+                            <div class="input-group mb-3">
+                                <span class="input-group-text">Dag</span>
+                                <input type="text" disabled placeholder="26-06-2022" class="form-control">
+                                <span class="input-group-text">Start Tijd</span>
+                                <input type="text" disabled placeholder="09:30" class="form-control">
+                                <span class="input-group-text">Eind Tijd</span>
+                                <input type="text" disabled placeholder="22:30" class="form-control">
+                                <button class="ms-5 btn btn-outline-warning shadow-ms"
+                                    style="width: 7rem;">Afmelden</button>
+                            </div>
+                        </div>
+                        <div class="col-12  text-end">
+                            <button class="btn btn-outline-success shadow-sm">Opslaan</button>
+                        </div>
+                    </div>
+                </div>
+
+            </main>
+        </div>
+    </div>
+</body>
+
+</html>
