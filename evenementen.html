@@ -72,33 +72,111 @@
                     <h1 class="h2">Evenementen</h1>
                 </header>
 
-                <div class="container-fluid row rounded-5 shadow p-3 mb-5 ">
-                    <div class="row">
-                        <div class="col-12 row">
+                <div class="container-fluid row rounded-5 shadow p-3 mb-5 row">
+                    <div class="col-12 row">
+                        <div class="col-md-12 my-2 col-sm-12">
+                            <input type="text" class="form-control" placeholder="Klant naam" aria-label="Klant naam">
+                        </div>
+                        <div class="col-md-6 my-2 col-sm-12">
+                            <input type="email" id="email" class="form-control" placeholder="voorbeeld@domein.nl">
+                        </div>
+                        <div class="col-md-6 my-2 col-sm-12">
+                            <input type="tel" id="tel" class="form-control" placeholder="+31 6 23456789">
+                        </div>
+                        <div class="col-md-6 my-2 col-sm-12">
+                            <textarea class="form-control" placeholder="Opmerkingen"></textarea>
+                        </div>
+                        <div class="col-md-6 my-2 col-sm-12 row">
+                            <div class="col-6"><input type="number" name="" id="" value="1" min="1" max="1000"></div>
+                            <div class="col-6"><input type="radio">Betaald</div>
+                        </div>
+                        <div class="col-md-12 my-2 col-sm-12">
                             <div class="input-group mb-3">
-                                <input type="text" class="form-control" placeholder="Klant naam"
+                                <span class="input-group-text">Dag</span>
+                                <input type="text" class="form-control" placeholder="26/06/2022"
+                                    onfocus="(this.type='date')">
+                                <span class="input-group-text">Start Tijd</span>
+                                <input type="time" class="form-control">
+                                <span class="input-group-text">Eind Tijd</span>
+                                <input type="time" class="form-control">
+
+                            </div>
+                        </div>
+                        <div class="col-lg-11 col-md-10 my-2 col-sm-12">
+                            <select class="form-select" aria-label="Default select example">
+                                <option selected>Kies Activiteit</option>
+                                <option value="Blokarten ">Blokarten </option>
+                                <option value="Powerkiten">Powerkiten</option>
+                                <option value="Kitebuggy">Kitebuggy</option>
+                                <option value="Kitesurfen">Kitesurfen</option>
+                                <option value="IJsbaden ">IJsbaden </option>
+                                <option value="Raften ">Raften </option>
+                                <option value="Suppen ">Suppen </option>
+                                <option value="Kajakken">Kajakken</option>
+                                <option value="Kitesurfen">Kitesurfen</option>
+                                <option value="Golfsurfen">Golfsurfen</option>
+                                <option value="E-choppers ">E-choppers </option>
+                                <option value="Bubble soccer">Bubble soccer</option>
+                                <option value="Expeditie Robinson">Expeditie Robinson</option>
+                                <option value="Archery Tag">Archery Tag</option>
+                                <option value="Boeren Beachgolf">Boeren Beachgolf</option>
+                                <option value="Beachtennis">Beachtennis</option>
+                                <option value="Zeskamp">Zeskamp</option>
+                                <option value="Beachvolleybal">Beachvolleybal</option>
+                                <option value="Beachsoccer">Beachsoccer</option>
+                                <option value="Schatzoeken">Schatzoeken</option>
+                                <option value="Cocktail workshop">Cocktail workshop</option>
+                                <option value="BeachLine Pubquiz">BeachLine Pubquiz</option>
+                                <option value="Boogschieten">Boogschieten</option>
+                                <option value="Djembé">Djembé</option>
+                                <option value="Schilderworkshop">Schilderworkshop</option>
+                                <option value="Beachcamp kids">Beachcamp kids</option>
+                                <option value="Kadobon">Kadobon</option>
+                            </select>
+
+                        </div>
+                        <div class="col-lg-1 col-md-2 my-2 col-sm-12">
+                            <button class="btn btn-outline-success">Toevoegen</button>
+                        </div>
+
+                    </div>
+                    <div class="row">
+                        <h4 class="text-center border-top mt-5">Planning</h4>
+                        <div class="col-12 row ">
+                            <div class="col-md-12 my-2 col-sm-12">
+                                <input type="text" disabled class="form-control" placeholder="Jansen"
                                     aria-label="Klant naam">
                             </div>
-
-                            <div class="input-group mb-3">
-                                <label for="email" class="form-label">Contact mail Klant</label>
-                                <input type="email" id="email" class="form-control" placeholder="voorbeeld@domein.nl">
-                                <label for="tel" class="form-label">Contact telefoonnummer Klant</label>
-                                <input type="tel" id="tel" class="form-control" placeholder="+31 6 23456789">
+                            <div class="col-md-6 my-2 col-sm-12">
+                                <input type="email" id="email" disabled class="form-control"
+                                    placeholder="mrjansen@hotmail.com">
                             </div>
-
-                            <label for="basic-url" class="form-label">Your vanity URL</label>
-                            <div class="input-group mb-3">
-                                <span class="input-group-text" id="basic-addon3">https://example.com/users/</span>
-                                <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+                            <div class="col-md-6 my-2 col-sm-12">
+                                <input type="tel" id="tel" disabled class="form-control" placeholder="+31 6 23456789">
                             </div>
-
-                            <div class="input-group">
-                                <textarea class="form-control" aria-label="With textarea"></textarea>
+                            <div class="col-md-6 my-2 col-sm-12">
+                                <textarea disabled class="form-control" style="height: 100px;"
+                                    placeholder="Komt met groep van 10 om 11 uur maar om 12 uur komen er nog 2 mensen bij. Graag rekening houden met het programma zodat iedereen hier van kan genieten. Iedereen mag 5 softdrinks & na afloop voor alle bittergarnituur."></textarea>
                             </div>
-                            <div class="input-group mb-3">
-                                <select class="form-select" aria-label="Default select example">
-                                    <option selected>Kies Activiteit</option>
+                            <div class="col-md-6 my-2 col-sm-12 row">
+                                <div class="col-6"><input type="number" disabled name="" id="" value="12" min="1" max="1000"></div>
+                                <div class="col-6"><input type="radio" checked>Betaald</div>
+                            </div>
+                            <div class="col-md-12 my-2 col-sm-12">
+                                <div class="input-group mb-3">
+                                    <span class="input-group-text">Dag</span>
+                                    <input type="text" disabled class="form-control" placeholder="25/06/2022"
+                                        onfocus="(this.type='date')">
+                                    <span class="input-group-text">Start Tijd</span>
+                                    <input type="text" placeholder="11:00 " disabled class="form-control">
+                                    <span class="input-group-text">Eind Tijd</span>
+                                    <input type="text" placeholder="onbekend" disabled class="form-control">
+
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-md-12 my-2 col-sm-12">
+                                <select disabled class="form-select" aria-label="Default select example">
+                                    <option selected>Expeditie Robinson</option>
                                     <option value="Blokarten ">Blokarten </option>
                                     <option value="Powerkiten">Powerkiten</option>
                                     <option value="Kitebuggy">Kitebuggy</option>
@@ -128,19 +206,92 @@
                                     <option value="Kadobon">Kadobon</option>
                                 </select>
 
+                            </div>
+                            <div class="col-lg-12 col-md-12 my-2 col-sm-12 ">
+                                <button class="btn btn-outline-warning">Bewerken</button>
+                                <button class="btn btn-outline-danger">verwijderen</button>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="col-12 row ">
+                            <div class="col-md-12 my-2 col-sm-12">
+                                <input type="text" disabled class="form-control" placeholder="Van der Valk"
+                                    aria-label="Klant naam">
+                            </div>
+                            <div class="col-md-6 my-2 col-sm-12">
+                                <input type="email" id="email" disabled class="form-control"
+                                    placeholder="klaas@vandervalk.nl">
+                            </div>
+                            <div class="col-md-6 my-2 col-sm-12">
+                                <input type="tel" id="tel" disabled class="form-control" placeholder="+31 6 23456789">
+                            </div>
+                            <div class="col-md-6 my-2 col-sm-12">
+                                <textarea disabled class="form-control" style="height: 100px;"
+                                    placeholder="Is een bedrijfsuitje met alleen maar mannen."></textarea>
+                            </div>
+                            
+                        <div class="col-md-6 my-2 col-sm-12 row">
+                            <div class="col-6"><input type="number" disabled name="" id="" value="10" min="1" max="1000"></div>
+                            <div class="col-6"><input type="radio" checked>Betaald</div>
+                        </div>
+                            <div class="col-md-12 my-2 col-sm-12">
+                                <div class="input-group mb-3">
+                                    <span class="input-group-text">Dag</span>
+                                    <input type="text" disabled class="form-control" placeholder="25/06/2022"
+                                        onfocus="(this.type='date')">
+                                    <span class="input-group-text">Start Tijd</span>
+                                    <input type="text" placeholder="15:30 " disabled class="form-control">
+                                    <span class="input-group-text">Eind Tijd</span>
+                                    <input type="text" placeholder="onbekend" disabled class="form-control">
 
-                                <button class="ms-5 btn btn-outline-success shadow-ms"
-                                    style="width: 7rem;">Toevoegen</button>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-md-12 my-2 col-sm-12">
+                                <select disabled class="form-select" aria-label="Default select example">
+                                    <option selected>Blokarten</option>
+                                    <option value="Blokarten ">Blokarten </option>
+                                    <option value="Powerkiten">Powerkiten</option>
+                                    <option value="Kitebuggy">Kitebuggy</option>
+                                    <option value="Kitesurfen">Kitesurfen</option>
+                                    <option value="IJsbaden ">IJsbaden </option>
+                                    <option value="Raften ">Raften </option>
+                                    <option value="Suppen ">Suppen </option>
+                                    <option value="Kajakken">Kajakken</option>
+                                    <option value="Kitesurfen">Kitesurfen</option>
+                                    <option value="Golfsurfen">Golfsurfen</option>
+                                    <option value="E-choppers ">E-choppers </option>
+                                    <option value="Bubble soccer">Bubble soccer</option>
+                                    <option value="Expeditie Robinson">Expeditie Robinson</option>
+                                    <option value="Archery Tag">Archery Tag</option>
+                                    <option value="Boeren Beachgolf">Boeren Beachgolf</option>
+                                    <option value="Beachtennis">Beachtennis</option>
+                                    <option value="Zeskamp">Zeskamp</option>
+                                    <option value="Beachvolleybal">Beachvolleybal</option>
+                                    <option value="Beachsoccer">Beachsoccer</option>
+                                    <option value="Schatzoeken">Schatzoeken</option>
+                                    <option value="Cocktail workshop">Cocktail workshop</option>
+                                    <option value="BeachLine Pubquiz">BeachLine Pubquiz</option>
+                                    <option value="Boogschieten">Boogschieten</option>
+                                    <option value="Djembé">Djembé</option>
+                                    <option value="Schilderworkshop">Schilderworkshop</option>
+                                    <option value="Beachcamp kids">Beachcamp kids</option>
+                                    <option value="Kadobon">Kadobon</option>
+                                </select>
+
+                            </div>
+                            <div class="col-lg-12 col-md-12 my-2 col-sm-12 ">
+                                <button class="btn btn-outline-warning">Bewerken</button>
+                                <button class="btn btn-outline-danger">verwijderen</button>
                             </div>
                         </div>
                     </div>
                 </div>
-
             </main>
         </div>
     </div>
     <div id="footer"></div>
-    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
     <script src="js/addin.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
